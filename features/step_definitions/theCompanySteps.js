@@ -5,10 +5,10 @@ const pageHelper = require('../../helper/PagerHelper').PagerHelper;
 
 
 Then('I should be taken to the The Company page', async function () {
-    let contactUsPage = pageHelper.create("TheCompanyPage");
+    let companyPage = pageHelper.create("TheCompanyPage");
 
-    let va = contactUsPage.TheCompanyContentSection.verifyPageIsDisplayed();
+    let acceptCookieConsent = companyPage.theCompanyContentSection().acceptCookieConsent();
+    await testController.click(acceptCookieConsent);
+    let va = companyPage.theCompanyContentSection().verifyPageIsDisplayed();
     await testController.expect(va).ok;
-    // await testController.expect(contactUsPage.StorefrontContentSection).ok;
-    
 });

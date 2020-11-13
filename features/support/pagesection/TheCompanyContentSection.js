@@ -11,8 +11,12 @@ exports.TheCompanyContentSection = {
     goto: function() {
         return globalThis.countryUnderTest.url;
     },
-    verifyPageIsDisplayed: function() {
-     return select("#cc-saveAll-startBtn").withAttribute('type', 'button')
+    verifyPageIsDisplayed: function () {
+        return select("#nav-media-level1").withAttribute('type', 'li').exists;
+    },
+
+    acceptCookieConsent: function () {
+        return select('#cc-saveAll-startBtn');
     }
 
 }

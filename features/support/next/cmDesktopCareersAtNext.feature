@@ -1,4 +1,4 @@
-@international @footer  @desktop
+@international  @desktop
 Feature: Platform Mod International Careers@next
     In order to be taken to correct location on the Next site
     As a user in all next international
