@@ -1,6 +1,4 @@
 const { Given, When, Then } = require('cucumber');
-const Role = require('testcafe').Role;
-
 const pageHelper = require('../../helper/PagerHelper').PagerHelper;
 
 

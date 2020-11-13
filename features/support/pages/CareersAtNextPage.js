@@ -1,5 +1,7 @@
 const CareersAtNextContentSection = require('../pagesection/CareersAtNextContentSection').CareersAtNextContentSection;
 const { Selector } = require('testcafe');
+const FooterSection = require('../pagesection/FooterSection').FooterSection;
+
 
 
 function select(selector) {
@@ -15,6 +17,9 @@ exports.CareersAtNextPage = {
 
     careersAtNextContentSection:function (){
         return CareersAtNextContentSection;
-    }
+    },
 
+    footerSection: function () {
+        return FooterSection;
+    }
 }
