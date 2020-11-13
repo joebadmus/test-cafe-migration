@@ -1,4 +1,5 @@
 const TheCompanyContentSection = require('../pagesection/TheCompanyContentSection').TheCompanyContentSection;
+const FooterSection = require('../pagesection/FooterSection').FooterSection;
 
 
 const { Selector } = require('testcafe');
@@ -16,6 +17,10 @@ exports.TheCompanyPage = {
 
     theCompanyContentSection:function (){
         return TheCompanyContentSection;
+    },
+
+    footerSection: function () {
+        return FooterSection;
     }
 
 }

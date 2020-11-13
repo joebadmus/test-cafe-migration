@@ -1,4 +1,4 @@
-const { storefrontContentSection } = require('../pagesection/StorefrontContentSection').StorefrontContentSection;
+const storefrontContentSection = require('../pagesection/StorefrontContentSection').StorefrontContentSection;
 const { Selector } = require('testcafe');
 
 
