@@ -18,23 +18,18 @@ exports.TestDataHelper = {
             url: countryUrl,
         };
         globalThis.countryUnderTest = countryUnderTest;
-    },
+    }, 
+    
+    getFooterLinks: function (countryCode, languageType="PrimaryLanguage") {
+        switch (languageType) {
+            case "PrimaryLanguage": return primaryLanguageFooters[countryCode];
+            case "SecondaryLanguage": return secondLanguageFooter[countryCode];
 
-     getPrimaryLanguageFooterLinks: function (countryCode) {
-        let marketFooters = primaryLanguageFooters[countryCode];
-        if (marketFooters === undefined)
-            throw `The country code ${countryCode} does not exist`;
-        return marketFooters;
+            default: throw `Language type - ${languageType} is not found`;
+        }
     },
-
-     getSecondLanguageFooterLinks: function (countryCode) {
-        let marketFooters = secondLanguageFooter[countryCode];
-        if (marketFooters === undefined)
-            throw `The country code ${countryCode} does not exist`;
-        return marketFooters;
-    },
-
-     getInternationalFooterIndex(footerText) {
+    
+    getInternationalFooterIndex(footerText) {
         // if (footerText === "Size Guide") return 0;
         if (footerText === "Returns Information") return 0;
         if (footerText === "Shipping Information") return 1;

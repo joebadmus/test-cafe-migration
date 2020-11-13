@@ -24,7 +24,7 @@ Given('I am an {string} user on {string} visiting {string} viewing {string} page
 });
 
 When("I select the {string} link from the footer", async function (footerOption) {
-    let footerLinks = testdataHelper.getPrimaryLanguageFooterLinks(globalThis.countryUnderTest.code);
+    let footerLinks = testdataHelper.getFooterLinks(globalThis.countryUnderTest.code);
     let footerIndex = testdataHelper.getInternationalFooterIndex(footerOption);
     await testController.click(testpage.footerSection().selectFootByText(footerLinks[footerIndex].linkText));
 });
