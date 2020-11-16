@@ -20,13 +20,8 @@ exports.TestDataHelper = {
         globalThis.countryUnderTest = countryUnderTest;
     }, 
     
-    getFooterLinks: function (countryCode, languageType="PrimaryLanguage") {
-        switch (languageType) {
-            case "PrimaryLanguage": return primaryLanguageFooters[countryCode];
-            case "SecondaryLanguage": return secondLanguageFooter[countryCode];
-
-            default: throw `Language type - ${languageType} is not found`;
-        }
+    getFooterLinks: function (countryCode, isPrimaryLanguage=true) {   
+        return isPrimaryLanguage ? primaryLanguageFooters[countryCode] : secondLanguageFooter[countryCode];
     },
     
     getInternationalFooterIndex(footerText) {
