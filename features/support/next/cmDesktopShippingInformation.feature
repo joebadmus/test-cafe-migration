@@ -1,4 +1,4 @@
-@international @footer1  @desktop
+@international @footer  @desktop
 Feature: Platform Mod International Shipping information
     In order to be taken to correct location on the Next site
     As a user in all next international
