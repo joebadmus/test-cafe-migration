@@ -3,12 +3,6 @@ const Role = require('testcafe').Role;
 
 const pageHelper = require('../../helper/PagerHelper').PagerHelper;
 const testdataHelper = require('../../helper/TestdataHelper').TestDataHelper;
-const { Selector } = require('testcafe');
-
-
-function select(selector) {
-    return Selector(selector).with({ boundTestRun: testController });
-}
 
 Given('I am an {string} user on {string} visiting {string} viewing {string} page', async function (testUser, modeType, country, currentPage) {
     testdataHelper.setTestCountry(country)
