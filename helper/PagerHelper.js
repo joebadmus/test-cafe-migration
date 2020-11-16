@@ -2,6 +2,7 @@ const HomePage = require('../features/support/pages/HomePage').HomePage
 const ContactUsPage = require('../features/support/pages/ContactUsPage').ContactUsPage
 const TheCompanyPage = require('../features/support/pages/TheCompanyPage').TheCompanyPage
 const CareersAtNextPage = require('../features/support/pages/CareersAtNextPage').CareersAtNextPage
+const MediaAndPressPage = require('../features/support/pages/MediaAndPressPage').MediaAndPressPage
 
 exports.PagerHelper = {
 
@@ -11,6 +12,8 @@ exports.PagerHelper = {
       case "ContactUsPage": return ContactUsPage;
       case "TheCompanyPage": return TheCompanyPage;
       case "Careers@NextPage": return CareersAtNextPage;
+      case "Media&PressPage": return MediaAndPressPage;
+
 
 
       default: throw `Page ${marketType} is not defined in the page helper`;
