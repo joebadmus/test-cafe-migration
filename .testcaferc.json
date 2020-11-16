@@ -1,5 +1,6 @@
 {
     "proxy": "end-appleproxy.next-uk.next.loc:8092",
-    "hostname" : "END-ECO-WPC-135"
+    "hostname" : "END-ECO-WPC-135",
+    "pageLoadTimeout": 5000
     
 }

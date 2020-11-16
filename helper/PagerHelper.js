@@ -4,6 +4,7 @@ const TheCompanyPage = require('../features/support/pages/TheCompanyPage').TheCo
 const CareersAtNextPage = require('../features/support/pages/CareersAtNextPage').CareersAtNextPage
 const SitemapPage = require('../features/support/pages/SitemapPage').SitemapPage
 const MediaAndPressPage = require('../features/support/pages/MediaAndPressPage').MediaAndPressPage
+const PrivacyPolicyPage = require('../features/support/pages/PrivacyPolicyPage').PrivacyPolicyPage
 
 exports.PagerHelper = {
 
@@ -15,6 +16,8 @@ exports.PagerHelper = {
       case "Careers@NextPage": return CareersAtNextPage;
       case "SitemapPage": return SitemapPage;
       case "Media&PressPage": return MediaAndPressPage;
+      case "PrivacyPolicyPage": return PrivacyPolicyPage;
+
 
 
 
