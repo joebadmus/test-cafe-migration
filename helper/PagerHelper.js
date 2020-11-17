@@ -7,6 +7,7 @@ const MediaAndPressPage = require('../features/support/pages/MediaAndPressPage')
 const PrivacyPolicyPage = require('../features/support/pages/PrivacyPolicyPage').PrivacyPolicyPage
 const ReturnsInformationPage = require('../features/support/pages/ReturnsInformationPage').ReturnsInformationPage
 const ShippingInformationPage = require('../features/support/pages/ShippingInformationPage').ShippingInformationPage
+const NextFranchisePage = require('../features/support/pages/NextFranchisePage').NextFranchisePage
 
 exports.PagerHelper = {
 
@@ -21,6 +22,8 @@ exports.PagerHelper = {
       case "PrivacyPolicyPage": return PrivacyPolicyPage;
       case "ReturnsInformationPage": return ReturnsInformationPage;
       case "ShippingInformationPage": return ShippingInformationPage;
+      case "NextFranchisePage": return NextFranchisePage;
+
 
 
 
