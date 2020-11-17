@@ -6,6 +6,7 @@ const SitemapPage = require('../features/support/pages/SitemapPage').SitemapPage
 const MediaAndPressPage = require('../features/support/pages/MediaAndPressPage').MediaAndPressPage
 const PrivacyPolicyPage = require('../features/support/pages/PrivacyPolicyPage').PrivacyPolicyPage
 const ReturnsInformationPage = require('../features/support/pages/ReturnsInformationPage').ReturnsInformationPage
+const ShippingInformationPage = require('../features/support/pages/ShippingInformationPage').ShippingInformationPage
 
 exports.PagerHelper = {
 
@@ -19,6 +20,7 @@ exports.PagerHelper = {
       case "Media&PressPage": return MediaAndPressPage;
       case "PrivacyPolicyPage": return PrivacyPolicyPage;
       case "ReturnsInformationPage": return ReturnsInformationPage;
+      case "ShippingInformationPage": return ShippingInformationPage;
 
 
 

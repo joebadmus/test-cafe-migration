@@ -1,14 +1,13 @@
-@international @desktop @footer
-Feature: Platform Mod International Privacy Policy
+@international @footer  @desktop
+Feature: Platform Mod International Shipping information
     In order to be taken to correct location on the Next site
     As a user in all next international
     I want to be taken to the correct location from the footer links
 
-    @privacypolicy
-    Scenario Outline: Platform Mod Footer Check Privacy Policy Page is Displayed
+    Scenario Outline: Platform Mod Footer Check Shipping Information Page is Displayed
         Given I am an "anonymous" user on "desktop" visiting "<domain>" viewing "HomePage" page
-        When I select the "Privacy Policy" link from the footer
-        Then I should be taken to the Privacy Policy page
+        And I select the "Shipping Information" link from the footer
+        Then I should be taken to the Shipping Information page
 
         Examples:
             | domain       |
@@ -62,4 +61,3 @@ Feature: Platform Mod International Privacy Policy
             #| UK           |
             #| Ukraine      |
             | USA          |
-

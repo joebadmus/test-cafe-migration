@@ -1,4 +1,3 @@
-
 const { Given, When, Then } = require('cucumber');
 const pageHelper = require('../../helper/PagerHelper').PagerHelper;
 
