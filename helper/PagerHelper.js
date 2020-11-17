@@ -9,6 +9,7 @@ const ReturnsInformationPage = require('../features/support/pages/ReturnsInforma
 const ShippingInformationPage = require('../features/support/pages/ShippingInformationPage').ShippingInformationPage
 const NextFranchisePage = require('../features/support/pages/NextFranchisePage').NextFranchisePage
 const TermsAndConditionsPage = require('../features/support/pages/TermsAndConditionsPage').TermsAndConditionsPage
+const DPDPickUpPage = require('../features/support/pages/DPDPickUpPage').DPDPickUpPage
 
 exports.PagerHelper = {
 
@@ -25,6 +26,7 @@ exports.PagerHelper = {
       case "ShippingInformationPage": return ShippingInformationPage;
       case "NextFranchisePage": return NextFranchisePage;
       case "TermsAndConditionsPage": return TermsAndConditionsPage;
+      case "DPDPickUpPage": return DPDPickUpPage;
 
 
 

@@ -7,7 +7,6 @@ let secondLanguageFooter = require("../footers/secondLanguageFooter.json");
 exports.TestDataHelper = {
 
     setTestCountry: function (value) {
-
         let countryUrl = prodConfig["url"][value];
 
         if (countryUrl === undefined) throw `Country ${value} is not found`;
@@ -18,12 +17,12 @@ exports.TestDataHelper = {
             url: countryUrl,
         };
         globalThis.countryUnderTest = countryUnderTest;
-    }, 
-    
-    getFooterLinks: function (countryCode, isPrimaryLanguage=true) {   
+    },
+
+    getFooterLinks: function (countryCode, isPrimaryLanguage = true) {
         return isPrimaryLanguage ? primaryLanguageFooters[countryCode] : secondLanguageFooter[countryCode];
     },
-    
+
     getInternationalFooterIndex(footerText) {
         // if (footerText === "Size Guide") return 0;
         if (footerText === "Returns Information") return 0;
@@ -40,10 +39,10 @@ exports.TestDataHelper = {
             if (footerText === "Next Franchise") return 9;
             if (footerText === "Next Affiliates") return 10;
         } else {
-            if (globalThis.countryUnderTest.code === "FR") {
+            if (globalThis.countryUnderTest.code === "LU") {
                 if (footerText === "DPD Pick Up") return 4;
             }
-            if (globalThis.countryUnderTest.code === "LU") {
+            if (globalThis.countryUnderTest.code === "FR") {
                 if (footerText === "Parcelshop") return 4;
             }
             if (globalThis.countryUnderTest.code === "IS") {
