@@ -8,6 +8,7 @@ const PrivacyPolicyPage = require('../features/support/pages/PrivacyPolicyPage')
 const ReturnsInformationPage = require('../features/support/pages/ReturnsInformationPage').ReturnsInformationPage
 const ShippingInformationPage = require('../features/support/pages/ShippingInformationPage').ShippingInformationPage
 const NextFranchisePage = require('../features/support/pages/NextFranchisePage').NextFranchisePage
+const TermsAndConditionsPage = require('../features/support/pages/TermsAndConditionsPage').TermsAndConditionsPage
 
 exports.PagerHelper = {
 
@@ -23,12 +24,13 @@ exports.PagerHelper = {
       case "ReturnsInformationPage": return ReturnsInformationPage;
       case "ShippingInformationPage": return ShippingInformationPage;
       case "NextFranchisePage": return NextFranchisePage;
+      case "TermsAndConditionsPage": return TermsAndConditionsPage;
 
 
 
 
 
-      default: throw `Page ${marketType} is not defined in the page helper`;
+      default: throw `${page} is not defined in the page helper`;
 
     }
   }
